@@ -1,16 +1,43 @@
-<%- include('includes/header.ejs'); %>
+<%- include('includes/header'); %>
+<%- include('includes/nav'); %>
 
-<section class="container">
-    <h1> <%= csrfToken %> </h1>
-    <form action="/" method="POST">
+<div class="container">
+    <div class="row">
 
-        <input type="hidden" name="_csrf" value='<%= csrfToken %>'>
-        
-        <label>Cliente</label>
-        <input type="text" name='cliente'>
-        <button type="submit">Enviar</button>
-    </form>
+        <div class="col-lg-2"></div>
 
-</section>
+        <div class="col-lg-8 my-3">
+            <h1 class=" text-center">
+                Agenda
+                <p class="text-center lead">
+                    Seus contatos estão a baixo
+                </p>
+            </h1>
 
-<%- include('includes/footer.ejs'); %>
+            <div class="row">
+
+                <div class="col my-3">
+                    <div class="alert alert-danger">Um error qualquer</div>
+                </div>
+
+            </div>
+
+            <div class="responsive-table">
+                <table class="table my-3">
+                    
+                    <tr>
+                        <td>Rafael</td>
+                        <td>Marcelo</td>
+                        <td>62999999999</td>
+                        <td>rafael@gmail.com</td>
+                    </tr>
+                
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<%- include('includes/footer'); %>

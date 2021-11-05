@@ -1,5 +1,4 @@
 module.exports.middleGlobal = (req, res, next) => {
-    console.log(res.locals);
     next();
 };
 
