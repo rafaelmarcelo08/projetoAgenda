@@ -3,9 +3,10 @@ module.exports.middleGlobal = (req, res, next) => {
 };
 
 module.exports.checkCsrfError = (error, req, res, next) => {
-    if (error && error.code === 'EBADCSRFTOKEN') {
+    if (error) {
         return res.render('404');
     }
+    next();
 };
 
 module.exports.csrfMiddleWare = (req, res, next) => {
