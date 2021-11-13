@@ -51,7 +51,11 @@ app.use(sessionOptions);
 
 app.use(flash());
 
-app.use(helmet());
+app.use(
+    helmet({
+        contentSecurityPolicy: false
+    })
+);
 app.use(csurf());
 
 app.use(checkCsrfError);

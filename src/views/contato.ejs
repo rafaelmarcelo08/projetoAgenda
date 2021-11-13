@@ -19,7 +19,7 @@
             <% if(contato._id) { %>
             <form action="/contato/edit/<%= contato._id %> " method="post">
             <% } else {%>
-            <form action="/contato/register" method="post">
+            <form action="/contato/register" method="post" class="cadastro-contato">
             <% } %>
 
                 <input type="hidden" name="_csrf" value=<%= csrfToken %>>
