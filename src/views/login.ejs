@@ -23,40 +23,44 @@
                         Se você ainda não tem conta, preencha o formulaário abaixo:
                     </p>
                     <form action="/login/register" method="post">
-                        <input type="hidden" name="_csrf" value=<%= csrfToken %> >
+                        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
                         <div class="form-group">
                             <labe>Seu e-mail</label>
                                 <input type="email" class="form-control" name="email" placeholder="Cadastre seu e-mail">
-                            <small id="emailHelp" class="form-text text-muted">Nós nunca iremos compartilhar seu e-mail
-                                com ninguém.</small>
-                            </div>
-                            <div class="form-group">
-                                <label>Sua senha</label>
-                                <input type="password" class="form-control" name="password" placeholder="Cadastre sua senha">
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Criar minha conta</button>
-                        </form>
-                        
-                    </div>
-
-                    
-                    <div class="col-lg my-3">
-                        <h4>Faça seu login</h4>
-                        <p>
-                            Se você já tem uma conta, faça login abaixo:
-                        </p>
-                        <form action="/login/login" method="post">
-                            <input type="hidden" name="_csrf" value=<%= csrfToken %> >
-                            <div class="form-group">
-                                <labe>Seu e-mail</label>
-                                    <input type="email" class="form-control" name="email" placeholder="Cadastre seu e-mail">
-                                    <small id="emailHelp" class="form-text text-muted">Nós nunca iremos compartilhar seu e-mail
-                                        com ninguém.</small>
-                                    </div>
-                                    <div class="form-group">
+                                <small id="emailHelp" class="form-text text-muted">Nós nunca iremos compartilhar seu
+                                    e-mail
+                                    com ninguém.</small>
+                        </div>
+                        <div class="form-group">
                             <label>Sua senha</label>
-                            <input type="password" class="form-control" name="password" placeholder="Cadastre sua senha">
+                            <input type="password" class="form-control" name="password"
+                                placeholder="Cadastre sua senha">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Criar minha conta</button>
+                    </form>
+
+                </div>
+
+
+                <div class="col-lg my-3">
+                    <h4>Faça seu login</h4>
+                    <p>
+                        Se você já tem uma conta, faça login abaixo:
+                    </p>
+                    <form action="/login/login" method="post">
+                        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+                        <div class="form-group">
+                            <labe>Seu e-mail</label>
+                                <input type="email" class="form-control" name="email" placeholder="Cadastre seu e-mail">
+                                <small id="emailHelp" class="form-text text-muted">Nós nunca iremos compartilhar seu
+                                    e-mail
+                                    com ninguém.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Sua senha</label>
+                            <input type="password" class="form-control" name="password"
+                                placeholder="Cadastre sua senha">
                         </div>
 
                         <button type="submit" class="btn btn-primary">Entrar</button>
